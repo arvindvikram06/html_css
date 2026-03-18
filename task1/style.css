@@ -5,7 +5,7 @@ html{
 
 body{
     margin:0;
-    padding:0
+    padding:0;
 }
 
 /* header-style */
@@ -13,7 +13,6 @@ header{
     position: fixed;
     top:0;
     width: 100%;
-    
     color: brown;
 }
 
