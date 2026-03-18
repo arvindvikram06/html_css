@@ -1,11 +1,10 @@
-Description:
+## Description
 
-This  project is a single-page static website.
-contains semantic HTML elements such as <header> , <nav> , <main> , and <footer>.
+This project is a simple card UI component built with HTML and CSS, featuring smooth hover effects.
 
-features:
+## Features
 
-1.Responive navigation bar
-2.implemented css for typography,padding and margin.
-3.implemented media queries for responsive design
-
+- Clean and minimal card design  
+- Smooth hover animations (lift, scale, and shadow effects)  
+- Image pop-up effect on hover  
+- Responsive cards using Flexbox  
