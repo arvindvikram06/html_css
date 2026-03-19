@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Modal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Popup Modal</h1>
+    </header>
+
+    <main>
+        <!-- target popup -->
+        <a href="#popup">
+            <button class="pop-btn">Open :target Popup</button>
+        </a>
+        <!-- hidden checkbox -->
+        <input type="checkbox" id="toggle">
+
+        <!-- checkbox-popup -->
+        <div class="check-toggle-container">
+            <label for="toggle" class="toggle-btn">Open Checkbox Popup</label>
+        </div>
+
+        <div class="checkpop-container">
+            <h2>Checkbox Popup</h2>
+            <label for="toggle" class="close-btn">x</label>
+        </div>
+
+        <div id="popup" class="pop-container">
+            <h2>:target Popup</h2>
+            <a href="#" class="close-btn">x</a>
+        </div>
+        <div class="overlay"></div>
+
+    </main>
+
+</body>
+
+</html>
