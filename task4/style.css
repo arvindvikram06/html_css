@@ -98,7 +98,7 @@ button{
     transition: all 0.2 ease-in-out;
 }
 
-
+/* responsive design */
 @media(max-width:900px) {
     header {
         flex-direction: column;
