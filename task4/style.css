@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: wheat;
+    font-family: monospace;
+}
+
+button{
+    width: 150px;
+    background-color: antiquewhite;
+    font-size: 20px;
+    padding: 7px 0px;
+    border: 2px solid burlywood;
+    border-radius: 20px;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.list li {
+    font-size: 20px;
+}
+
+/* dropdown style */
+.drop-down-content {
+    position: absolute;
+    visibility: hidden;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+/* dropdown  visiblity */
+.drop-down:hover .drop-down-content {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* dropdown list */
+.drop-down-content ul {
+    margin: 0;
+    padding: 10px;
+    width: 150px;
+    list-style: none;
+}
+
+.drop-down-content li {
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.drop-down-content li:hover {
+    background-color: #f0f0f0;
+}
+
+/* nested dropdown */
+.nested {
+    position: relative;
+}
+
+/* nested menu */
+.nested-content {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    visibility: hidden;
+    background-color: white;
+    width: 100px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateX(10px);
+    transition: all 0.3s ease;
+    padding: 10px;
+}
+
+.nested:hover .nested-content {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50px);
+    transition: all 0.2 ease-in-out;
+}
+
+
+@media(max-width:900px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list {
+        flex-direction: column;
+    }
+
+    .nested:hover .nested-content {
+        transform: translateX(-30px) translateY(+30px);
+    }
+
+}

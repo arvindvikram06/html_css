@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop-down</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1> drop-down-menu </h1>
+        <nav>
+            <ul class="list">
+                <li>home</li>
+                <li class="drop-down">
+                    <button>drop down</button>
+                    <!-- drop down -->
+                    <div class="drop-down-content">
+                        <ul>
+                            <li>profile</li>
+                            <!-- Nested dropdown -->
+                            <li class="nested">
+                                more ->
+                                <ul class="nested-content">
+                                    <li>settings</li>
+                                    <li>logout</li>
+                                </ul>
+                            </li>
+                            <!-- Nested dropdown ends -->
+                            <li>contact</li>
+                        </ul>
+                    </div>
+                    <!-- drop down ends-->
+                </li>
+            </ul>
+        </nav>
+        
+    </header>
+</body>
+</html>
