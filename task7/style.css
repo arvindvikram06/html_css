@@ -1,0 +1,111 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+/* header-style */
+header{
+    position: relative;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    color: white;
+}   
+
+/* hidden-radio-btn */
+input{
+    display: none;
+}
+
+
+/* carousel-style */
+.carousel-box{
+    position: relative;
+    display: flex;
+    width: 600%;
+    flex-shrink: 0;
+    transition: all 1s ease;
+    
+}
+.carousel-box img{
+    width: 100vw;
+    height: 90vh;
+    object-fit: contain;
+    background-color: black;
+}
+
+/* btn-styl */
+.navigation-btn{
+    position: absolute;
+    bottom: 20px; 
+    left: 50%; 
+     transform: translateX(-50%);        
+    display: flex;
+    gap: 15px;
+}
+
+.navigation-btn label{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    /* background-color: red; */
+    cursor: pointer;
+    border: 2px solid #3A9AFF;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+#image1:checked~ .navigation-btn .btn-1,
+#image2:checked~ .navigation-btn .btn-2,
+#image3:checked~ .navigation-btn .btn-3,
+#image4:checked~ .navigation-btn .btn-4,
+#image5:checked~ .navigation-btn .btn-5,
+#image6:checked~ .navigation-btn .btn-6{
+    background-color: #3A9AFF;
+}
+
+
+
+#image1:checked ~ .carousel-box{
+    animation: slider 23s infinite;
+    transform: translate(0);
+}
+
+#image2:checked ~ .carousel-box{
+    transform: translateX(-16.68%);
+}
+
+#image3:checked ~ .carousel-box{
+    transform: translateX(-33.36%);
+}
+
+#image4:checked ~ .carousel-box{
+    transform: translateX(-50.04%);
+}
+
+#image5:checked ~ .carousel-box{
+    transform: translateX(-66.72%);
+}
+
+#image6:checked ~ .carousel-box{
+    transform: translateX(-83.4%);
+}
+
+
+/* animation */
+@keyframes slider{
+    0% {transform: translateX(0);}
+    20% {transform: translateX(-16.68%);}
+    40% {transform: translateX(-33.36%);}
+    60% {transform: translateX(-50.04%);}
+    80% {transform: translateX(-66.72%);}
+    100% {transform: translateX(-83.4%);}
+}
+
