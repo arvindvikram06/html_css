@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box;
+}
+
+/* navbar-style */
+.navigation-bar{
+    height: 10vh;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #C08552;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    z-index: 10;
+}
+
+.list{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.list a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+/* layout grid-1 */
+.main-layout{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: auto;
+    /* height: 80vh; */
+}
+
+.sidebar{
+    position: sticky;
+    top: 10vh;
+    height: 90vh;
+    background-color: #FFF2D0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section{
+    background-color: black;
+    position: relative;
+    
+}
+
+/* sub layout grid2 */
+.cards-grid{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 20px 50px;
+    height: auto;
+    background-color: #EED9B9;
+}
+
+.box {
+    width: 350px;
+    height: 250px;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 30px;
+}
+
+.cards2 {
+    
+    padding: 20px 50px;
+    height: auto;
+    background-color: #FDC3A1;
+    position: relative;
+}
+
+.small-box{
+    width: 250px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    margin-bottom: -40px;
+   
+    
+}
+
+.small-box:nth-child(1) {
+    z-index: 3;
+}
+
+.small-box:nth-child(2) {
+    z-index: 2;
+}
+
+.footer{
+    height: 20vh;
+    background-color:#C08552;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@media(max-width:1000px){
+
+    .list{
+        gap: 10px;
+    }
+
+    .list a{
+        font-size: 15px;
+    }
+
+    .box{
+        width: 200px;
+        height: 150px;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cards2 {
+        order: -1;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+    }
+    .small-box{
+        width: 200px;
+        margin-bottom: 20px;
+        z-index: auto;
+    }
+    
+}
