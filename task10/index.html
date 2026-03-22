@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>static webpage</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <header>
+        <!-- navigation-bar -->
+        <nav>
+            <h1>BMW</h1>
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#gallery">gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- gallery-section -->
+        <section id="gallery">
+            <div class="carousel">
+
+                <input type="radio" id="image1" name="radiobuttons" checked />
+                <input type="radio" id="image2" name="radiobuttons" />
+                <input type="radio" id="image3" name="radiobuttons" />
+                <input type="radio" id="image4" name="radiobuttons" />
+                <input type="radio" id="image5" name="radiobuttons" />
+                <input type="radio" id="image6" name="radiobuttons" />
+
+                <div class="carousel-box">
+                    <div class="slide"><img src="./assets/car1.png" /></div>
+                    <div class="slide"><img src="./assets/car2.png" /></div>
+                    <div class="slide"><img src="./assets/car3.png" /></div>
+                    <div class="slide"><img src="./assets/car4.png" /></div>
+                    <div class="slide"><img src="./assets/car5.png" /></div>
+                    <div class="slide"><img src="./assets/car6.png" /></div>
+                </div>
+
+                <div class="navigation-btn">
+                    <label class="btn-1" for="image1"></label>
+                    <label class="btn-2" for="image2"></label>
+                    <label class="btn-3" for="image3"></label>
+                    <label class="btn-4" for="image4"></label>
+                    <label class="btn-5" for="image5"></label>
+                    <label class="btn-6" for="image6"></label>
+                </div>
+            </div>
+        </section>
+        <!-- about-section -->
+        <section id="about">
+            <div class="about-container">
+
+                <div class="about-text">
+                    <h1>About BMW 3.0 CSL</h1>
+                    <p>The BMW 3.0 CSL is one of the most iconic sports cars ever built.
+                        Known as the "Batmobile", it was designed for high performance
+                        and racing dominance.</p>
+                    <p>It combines lightweight construction, powerful engineering,
+                        and aerodynamic excellence.</p>
+                </div>
+
+                <div class="about-image">
+                    <img src="./assets/car2.png" alt="BMW car">
+                </div>
+
+            </div>
+
+            <div class="specs-container">
+
+                <div class="card">
+                    <img src="./assets/engine.jpeg">
+                    <h3>Engine</h3>
+                    <p>3.0L Inline-6 Engine delivering high performance.</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/speed.jpeg">
+                    <h3>Top Speed</h3>
+                    <p>Up to 220 km/h with precision handling.</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/weight.jpeg">
+                    <h3>Lightweight</h3>
+                    <p>Lightweight body for better acceleration.</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/design.jpeg">
+                    <h3>Aerodynamics</h3>
+                    <p>Optimized shape for racing stability.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- home-section -->
+        <section id="home">
+            <div class="home-main-grid">
+                <div class="intro">
+                    <h1>Introducing...</h1>
+                    <h1 class="hero"><span style="color: blue;">B</span>MW <span style="color: red;">3.0</span> CSL</h1>
+                    <p>The BMW 3.0 CSL is one of the most iconic sports cars ever built.
+                        Known as the "Batmobile", it was designed for high performance
+                        and racing dominance.</p>
+                </div>
+                <div class="picture">
+                    <img src="./assets/car1.png" />
+                </div>
+            </div>
+            <div class="home-main-button">
+                <button><a href="#gallery">Gallery</a></button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h4>all rights reserved BMW</h4>
+    </footer>
+
+</body>
+
+</html>
